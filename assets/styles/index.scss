@@ -1,1 +1,87 @@
 @import '~bootstrap/scss/bootstrap';
+@import 'theme';
+
+
+body {
+  background: url('public/images/free_sports_background.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  color: yellow;
+}
+
+h4 {
+  color: yellow;
+}
+
+#sign-in {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#signup{
+  color: rgb(61, 250, 231);
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#change-password {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#sign-in-message {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+}
+
+#sign-up-message {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+}
+
+#message {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+}
+
+#create-post {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#update-post {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#delete-post {
+  color: rgb(61, 250, 231);
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#create-comment {
+  color: rgb(236, 132, 13);
+  font-size: 35;
+}
+
+#create-comment-form {
+  font-size: 20;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.nav-buttons {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.posts {
+  margin: 25px;
+  border: 20px;
+}

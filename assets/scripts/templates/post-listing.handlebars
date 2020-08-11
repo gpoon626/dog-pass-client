@@ -1,0 +1,32 @@
+{{#each posts as |post|}}
+  {{log post}}
+  <section class="posts" data-id="{{post._id}}">
+    <h3>
+      {{limit post.date 20}}
+    </h3>
+    <h2>
+      {{limit post.match 20}}
+    </h2>
+    <h5>
+      {{limit post.odds 20}}
+    </h5>
+    <h8>Post ID</h8>
+    <p>{{post._id}}</p>
+    <!-- <h6>Match:</h6>
+    <p>
+      {{#if post.date}}
+        {{post.match}}
+        {{post.odds}}
+      {{else}}
+        None provided.
+      {{/if}}
+    </p> -->
+  <h3>Trash or Pass:</h3>
+  <button id="view-comments">View</button>
+  {{#each post.comments as |comment|}}
+  {{log comment}}
+  <p id="comment">{{comment.content}}</p>
+  {{/each}}
+  </section>
+
+{{/each}}
