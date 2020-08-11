@@ -23,7 +23,7 @@ $(() => {
   $('#view-posts').hide()
   $('#clearPostsButton').hide()
   $('#create-comment').hide()
-  $('#comment').hide()
+  // $('#comment').hide()
 
   $('#view-posts').on('click', postAction.onViewPosts)
   $('#create-post-form').on('submit', postAction.onPostCreate)
