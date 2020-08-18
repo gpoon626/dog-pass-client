@@ -5,6 +5,7 @@ const store = require('./../store')
 
 const postCreateSuccess = function (response) {
   console.log(response, 'new post!')
+  $('#create-message').text('Post Created!')
   $('form').trigger('reset')
   // store.movie = response.movie
 }
@@ -40,6 +41,7 @@ const showPostsFail = function () {
 
 const updatePostSuccess = function (response) {
   console.log(response, 'updated post!')
+  $('#update-message').text('Post Updated!')
   $('form').trigger('reset')
 }
 
@@ -49,6 +51,7 @@ const updatePostFail = function () {
 
 const deletePostSuccess = function (response) {
   console.log(response, 'post deleted!')
+  $('#delete-message').text('Post Deleted')
   $('form').trigger('reset')
 }
 
