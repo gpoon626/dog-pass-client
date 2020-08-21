@@ -47,6 +47,7 @@ const updatePostSuccess = function (response) {
 
 const updatePostFail = function () {
   // console.log('Failed')
+  $('#update-error').text('Sorry, this post does not belong to you')
 }
 
 const deletePostSuccess = function (response) {
@@ -57,6 +58,7 @@ const deletePostSuccess = function (response) {
 
 const deletePostFail = function () {
   // console.log('Failed')
+  $('#delete-error').text('Sorry, this post does not belong to you')
 }
 
 module.exports = {
