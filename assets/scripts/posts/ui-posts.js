@@ -5,7 +5,7 @@ const store = require('./../store')
 
 const postCreateSuccess = function (response) {
   console.log(response, 'new post!')
-  $('#create-message').text('Post Created!')
+  $('#create-message').text('Post Created! Click View Posts')
   $('form').trigger('reset')
   // store.movie = response.movie
 }
@@ -19,8 +19,8 @@ const viewPostsSuccess = function (data) {
   store.posts = data.posts
 
   const showPostsHtml = showPostsTemplate({posts: data.posts})
-
-  $('.content').append(showPostsHtml)
+  $('.posts').show()
+  $('.content').html(showPostsHtml)
 }
 
 const clearPosts = () => {
@@ -41,7 +41,7 @@ const showPostsFail = function () {
 
 const updatePostSuccess = function (response) {
   console.log(response, 'updated post!')
-  $('#update-message').text('Post Updated!')
+  $('#update-message').text('Post Updated! Click View Post')
   $('form').trigger('reset')
 }
 
@@ -51,7 +51,7 @@ const updatePostFail = function () {
 
 const deletePostSuccess = function (response) {
   console.log(response, 'post deleted!')
-  $('#delete-message').text('Post Deleted')
+  $('#delete-message').text('Post Deleted. Click View Post to refresh')
   $('form').trigger('reset')
 }
 

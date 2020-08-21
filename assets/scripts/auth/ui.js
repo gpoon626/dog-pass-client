@@ -25,6 +25,7 @@ const signUserInSuccess = function (response) {
   $('#update-post').show()
   $('#delete-post').show()
   $('#create-comment').show()
+  // $('#content').show()
 
   $('#view-posts').show()
   $('#clearPostsButton').show()
@@ -64,7 +65,7 @@ const signOutSuccess = function (response) {
   $('#update-post').hide()
   $('#delete-post').hide()
   $('#create-comment').hide()
-  $('#content').hide()
+  $('.posts').hide()
 
   $('#view-posts').hide()
   $('#clearPostsButton').hide()

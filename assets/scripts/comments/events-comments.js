@@ -19,6 +19,7 @@ const onCreateComment = function (event) {
     .catch(ui.commentCreateFail)
 }
 
+
 module.exports = {
   onCreateComment
 }

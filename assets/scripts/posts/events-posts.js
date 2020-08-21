@@ -23,8 +23,8 @@ const onViewPosts = function () {
   event.preventDefault()
   api.viewPosts()
 
-    .then(res => ui.viewPostsSuccess(res))
-    // .then(ui.viewPostsSuccess)
+    // .then(res => ui.viewPostsSuccess(res))
+    .then(ui.viewPostsSuccess)
     .catch(ui.viewPostsFail)
 }
 
