@@ -2,7 +2,7 @@
 // const showPosts = require('../posts/ui-posts.js')
 
 const commentCreateSuccess = function (response) {
-  console.log(response, 'comment created!')
+  // console.log(response, 'comment created!')
   $('#post-comment').text('Comment Created! Click View Post')
   $('form').trigger('reset')
 
@@ -10,7 +10,7 @@ const commentCreateSuccess = function (response) {
 }
 
 const commentCreateFail = function () {
-  console.log('Failed')
+  // console.log('Failed')
 }
 
 module.exports = {

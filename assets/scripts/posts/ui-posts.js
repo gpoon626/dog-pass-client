@@ -4,18 +4,18 @@ const showPostsTemplate = require('../templates/post-listing.handlebars')
 const store = require('./../store')
 
 const postCreateSuccess = function (response) {
-  console.log(response, 'new post!')
+  // console.log(response, 'new post!')
   $('#create-message').text('Post Created! Click View Posts')
   $('form').trigger('reset')
   // store.movie = response.movie
 }
 
 const postCreateFail = function () {
-  console.log('Failed')
+  // console.log('Failed')
 }
 
 const viewPostsSuccess = function (data) {
-  console.log('viewPostsSuccess', data)
+  // console.log('viewPostsSuccess', data)
   store.posts = data.posts
 
   const showPostsHtml = showPostsTemplate({posts: data.posts})
@@ -28,15 +28,15 @@ const clearPosts = () => {
 }
 
 const viewPostsFail = function () {
-  console.log('Failed')
+  // console.log('Failed')
 }
 
 const showPostsSuccess = function (data) {
-  console.log(data)
+  // console.log(data)
 }
 
 const showPostsFail = function () {
-  console.log('Failed')
+  // console.log('Failed')
 }
 
 const updatePostSuccess = function (response) {
@@ -46,17 +46,17 @@ const updatePostSuccess = function (response) {
 }
 
 const updatePostFail = function () {
-  console.log('Failed')
+  // console.log('Failed')
 }
 
 const deletePostSuccess = function (response) {
-  console.log(response, 'post deleted!')
+  // console.log(response, 'post deleted!')
   $('#delete-message').text('Post Deleted. Click View Post to refresh')
   $('form').trigger('reset')
 }
 
 const deletePostFail = function () {
-  console.log('Failed')
+  // console.log('Failed')
 }
 
 module.exports = {
