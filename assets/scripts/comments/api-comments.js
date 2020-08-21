@@ -4,7 +4,7 @@ const store = require('./../store')
 const config = require('./../config')
 
 const commentCreate = function (data) {
-  console.log(data.movie)
+  // console.log(data.movie)
   return $.ajax({
     url: config.apiUrl + '/comments',
     method: 'POST',

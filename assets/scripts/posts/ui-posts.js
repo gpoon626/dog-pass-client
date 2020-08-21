@@ -40,7 +40,7 @@ const showPostsFail = function () {
 }
 
 const updatePostSuccess = function (response) {
-  console.log(response, 'updated post!')
+  // console.log(response, 'updated post!')
   $('#update-message').text('Post Updated! Click View Post')
   $('form').trigger('reset')
 }

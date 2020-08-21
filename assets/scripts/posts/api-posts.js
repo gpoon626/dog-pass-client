@@ -5,7 +5,7 @@ const config = require('./../config')
 
 // Create
 const postCreate = function (data) {
-  console.log(data)
+  // console.log(data)
   return $.ajax({
     url: config.apiUrl + '/posts',
     method: 'POST',
@@ -52,7 +52,7 @@ const viewPosts = function (data) {
 
 // Update
 const updatePost = function (data) {
-  console.log(data)
+  // console.log(data)
   return $.ajax({
     url: config.apiUrl + '/posts/' + data.post.id,
     method: 'PATCH',

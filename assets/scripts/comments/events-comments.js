@@ -11,7 +11,7 @@ const onCreateComment = function (event) {
 
   const form = event.target
   const data = getFormFields(form)
-  console.log(data)
+  // console.log(data)
 
   api.commentCreate(data)
 
