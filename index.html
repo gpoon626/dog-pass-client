@@ -1,0 +1,133 @@
+<html>
+    <head>
+      <head>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        </style>
+        <title>Handlebars</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Do not add `link` tags-->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <!-- Do not add `script` tags-->
+        <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+        <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1 style=font-family:fantasy;>Dog Pass</h1>
+      <h4 style=font-family:lemonada,cursive;>Trash or Pass on the betting underdogs?</h4>
+
+      <section id="sign-in-message">
+        <p style=font-family:Teko;> Sign in to view the odds & matches</p>
+      </section>
+
+      <section id ="sign-in">
+        <form id="sign-in-form">
+          <input type="text" name="credentials[email]" placeholder="Username" required>
+          <input type="password" name="credentials[password]" placeholder="Password" required>
+          <button type="submit">Sign In</button>
+          <span id="signin-result"></span>
+        </form>
+      </section>
+
+    <section id="sign-up-message">
+      <p style=font-family:Teko;> Don't have an account? Sign up down below!</p>
+    </section>
+
+      <section id ="signup">
+        <form id="signup-form">
+          <input type="text" name="credentials[email]" placeholder="Username" required>
+          <input type="password" name="credentials[password]" placeholder="Password" required>
+          <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
+          <button type="submit">Sign Up</button>
+          <span id="signup-result"></span>
+        </form>
+     </section>
+
+      <section id ="change-password">
+        <form id="change-password-form">
+          <input type="password" name="passwords[old]" placeholder="Password" required>
+          <input type="password" name="passwords[new]" placeholder="New Password" required>
+          <button type="submit">Change Password</button>
+          <span id="change-password-result"></span>
+        </form>
+        <button id="sign-out" type="click">Sign Out</button>
+     </section>
+
+
+     <p id="message" style=font-family:Teko;> </p>
+
+
+     <section id ="create-post">
+        <p style=font-family:Teko;> Match: </p>
+       <form id="create-post-form">
+         <input type="text" name="post[date]" placeholder="Match Date" required>
+         <input type="text" name="post[match]" placeholder="The Match" required>
+         <input type="text" name="post[odds]" placeholder="The Odds" required>
+         <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <p id="create-message" style=font-family:Teko;> </p>
+
+    <!-- <section id ="show-movie">
+      <p> Movie Search</p>
+      <form id="show-movie-form">
+        <input type="text" name="movie[title]" placeholder="Enter Movie Title" required>
+        <button type="submit">Search</button>
+      </form>
+    </section> -->
+
+    <section id ="update-post">
+      <p style=font-family:Teko;> Update a Match</p>
+      <form id="update-post-form">
+        <input type="text" name="post[id]" placeholder="Post ID" required>
+        <input type="text" name="post[date]" placeholder="Match Date">
+        <input type="text" name="movie[match]" placeholder="The Match" required>
+        <input type="text" name="post[odds]" placeholder="The Odds" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <p id="update-message" style=font-family:Teko;> </p>
+    <p id="update-error" style=font-family:Teko;> </p>
+
+    <section id ="delete-post">
+      <p style=font-family:Teko;> Delete a Match </p>
+      <form id="delete-post-form">
+        <input type="text" name="post[id]" placeholder="Post ID" required>
+      <button type="submit">Delete</button>
+    </form>
+   </section>
+
+   <p id="delete-message" style=font-family:Teko;> </p>
+   <p id="delete-error" style=font-family:Teko;> </p>
+
+
+   <section id ="create-comment">
+     <p style=font-family:Teko> Trash or Pass? </p>
+      <form id="create-comment-form">
+        <input type="text" name="post[id]" placeholder="Post ID" required>
+        <input type="text" name="comment[content]" placeholder="Comment" required>
+      <button type="submit">Submit</button>
+     </form>
+   </section>
+
+   <p id="post-comment" style=font-family:Teko;> </p>
+
+  <main>
+   <nav>
+   <div class="nav-buttons">
+     <button id="view-posts" >View Posts!</button>
+     <button id="clearPostsButton" >Clear Posts!</button>
+   </div>
+  </nav>
+
+     <div id="content" class="content"></div>
+  </main>
+
+  </body>
+</html>
