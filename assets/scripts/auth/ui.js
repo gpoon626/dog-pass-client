@@ -66,6 +66,10 @@ const signOutSuccess = function (response) {
   $('#delete-post').hide()
   $('#create-comment').hide()
   $('.posts').hide()
+  $('#create-message').hide()
+  $('#update-message').hide()
+  $('#delete-message').hide()
+  $('#post-comment').hide()
 
   $('#view-posts').hide()
   $('#clearPostsButton').hide()

@@ -1,5 +1,5 @@
 {{#each posts as |post|}}
-  {{log post}}
+  <!-- {{log post}} -->
   <section class="posts" data-id="{{post._id}}">
     <h3>
       {{limit post.date 20}}
@@ -24,7 +24,7 @@
   <h3>Trash or Pass:</h3>
   <!-- <button id="view-comments">View</button> -->
   {{#each post.comments as |comment|}}
-  {{log comment}}
+  <!-- {{log comment}} -->
   <p id="comment">{{comment.content}}</p>
   {{/each}}
   </section>
